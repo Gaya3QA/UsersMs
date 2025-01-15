@@ -1,4 +1,8 @@
 version: 0.2
+secrets:
+  - name: Github-accesstoken-yWmcyS
+    valueFrom: arn:aws:secretsmanager:us-east-1:879888739058:secret:Github-accesstoken-yWmcyS
+
 
 phases:
   pre_build:

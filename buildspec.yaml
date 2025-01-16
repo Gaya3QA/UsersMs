@@ -7,7 +7,7 @@ secrets:
 phases:
   pre_build:
     commands:
-      - .\gradlew build
+      - ./gradlew build
       - echo Logging in to Amazon ECR...
       - aws --version
       - REPOSITORY_URI=879888739058.dkr.ecr.us-east-1.amazonaws.com/project/boarepo

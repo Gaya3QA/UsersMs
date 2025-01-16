@@ -1,6 +1,6 @@
 version: 0.2
 secrets:
-  - name: Github-accesstoken-yWmcyS
+  - name: Github-accesstoken
     valueFrom: arn:aws:secretsmanager:us-east-1:879888739058:secret:Github-accesstoken-yWmcyS
 
 

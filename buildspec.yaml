@@ -28,6 +28,8 @@ phases:
       - docker push $REPOSITORY_URI:latest
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - echo Writing image definitions file...
+      - REPOSITORY_URI=879888739058.dkr.ecr.us-east-1.amazonaws.com/project/boarepo
+      - printf '[{"name":"service-boa-user","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
       # add your container name
       - DOCKER_CONTAINER_NAME=project/boarepo
       - printf '[{"name":"%s","imageUri":"%s"}]' $DOCKER_CONTAINER_NAME $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
